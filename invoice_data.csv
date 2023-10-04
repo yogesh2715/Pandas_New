@@ -1,0 +1,10 @@
+Timestamp1,Email_Address,Processing_Tool,Bill_Ref_Code,Track_ID,Payer,Review,Bill_Lines,Captured_Payee,Invoice_Number,Invoice_Date,Invoice_Due_Date,PO_Number,Tax_Amt,Total_Amt,Currency,Foreign_Language,Quality_Analyst,Comments,Duplicate
+,vaibhav.z@datagainservices.com,Kofax,,20230801-10/1,TemcoLogistics,P,0,UNKNOWN VENDOR,,,,,5,0,USD,,NA,,20230801-10/1TemcoLogistics
+,sunil@datagainservices.com,Kofax,,20230801-27/1,TemcoLogistics,P,0,Unknown Vendor,,,,,6,0,USD,,NA,This is not an inv,20230801-27/1TemcoLogistics
+,abhishek@datagainservices.com,Kofax,,20230801-34/1,Pattern,P,0,unknown vendor,,,,,1,0,USD,,NA,This is not an invoice,20230801-34/1Pattern
+,shubham.p@datagainservices.com,Kofax,,20230801-10/1,Pattern,P,5,Edible Health Limited - t8e5ae0a4tcb33t,INV-1813,5/16/2023,7/15/2023,,1,0,GBP,,NA,,20230801-10/1Pattern
+,sneha.p@datagainservices.com,Kofax,,20230801-18/1,TemcoLogistics,R,5,UNKNOWN VENDOR,,,,,1,0,USD,,NA,,20230801-18/1TemcoLogistics
+,omkar.s@datagainservices.com,Kofax,,20230801-24/1,DytechAuto,P,5,"Schneider Tire Outlet, Inc. (Matthew Schneider)",,7/31/2023,,,1,5168.92,USD,,NA,,20230801-24/1DytechAuto
+,preksha@datagainservices.com,Kofax,,20230801-28/1,Pattern,P,5,Conquest Sports Aust Pty Ltd -tf80d2cdatd218t,3487807,8/1/2023,9/30/2023,,1,231,USD,,NA,,20230801-28/1Pattern
+,rahul.d@datagainservices.com,Kofax,,20230801-35/1,TemcoLogistics,P,5,Diesel Direct   t8359a3d1t5856t,95289930,7/30/2023,8/14/2023,,1,460.67,USD,,NA,description line missing ,20230801-35/1TemcoLogistics
+,sunil@datagainservices.com,Kofax,,20230801-48/1,TemcoLogistics,P,5,ULINE tcbfedb8dt8e32t,166613716,7/31/2023,8/30/2023,,1,360.27,USD,,NA,,20230801-48/1TemcoLogistics
