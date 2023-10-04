@@ -1,4 +1,3 @@
-# Pandas_New
 Make Database of Excel Data using python code
 import mysql.connector  
 import csv
