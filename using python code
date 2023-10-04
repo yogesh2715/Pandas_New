@@ -1,0 +1,53 @@
+# Pandas_New
+Make Database of Excel Data using python code
+import mysql.connector  
+import csv
+from datetime import datetime, timedelta
+
+connection = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="root",
+    database="tipaltiDT"
+)
+
+cursor=connection.cursor()
+print(connection,"Successfully Connection Done")
+
+
+with open(r"C:\Users\yogesh.datagain\Desktop\Database_Tipalti\invoice_data.csv") as csvfile:
+    csvreader=csv.reader(csvfile)
+    next(csvreader)
+
+    for row in csvreader:
+        # Timestamp1 =datetime.strptime(row[0], '%m/%d/%Y %H:%M').date()
+        Email_Address = row[1]
+        Processing_Tool = row[2]
+        Bill_Ref_Code = row[3]
+        Track_ID = row[4]
+        Payer = row[5]
+        Review = row[6]
+        Bill_Lines =int(row[7])
+        Captured_Payee = row[8]
+        Invoice_Number = row[9]
+        # Invoice_Date =datetime.strptime(row[10],'%m/%d/%Y').date()
+        # Invoice_Due_Date =datetime.strptime(row[11],'%m/%d/%Y').date()
+        PO_Number = row[12]
+        Tax_Amt = row[13]
+        Total_Amt =row[14]
+        Currency = row[15]
+        Foreign_Language = row[16]
+        Quality_Analyst = row[17]
+        Comments = row[18]
+        Duplicate = row[19]
+
+        insert_sql = "INSERT INTO invoice_data( Email_Address, Processing_Tool, Bill_Ref_Code, Track_ID, Payer, Review, Bill_Lines,Captured_Payee, Invoice_Number, PO_Number, Tax_Amt, Total_Amt, Currency,Foreign_Language, Quality_Analyst, Comments, Duplicate)values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+        val=( Email_Address, Processing_Tool, Bill_Ref_Code, Track_ID, Payer, Review, Bill_Lines,Captured_Payee, Invoice_Number, PO_Number, Tax_Amt, Total_Amt, Currency,Foreign_Language, Quality_Analyst, Comments, Duplicate)
+
+        cursor.execute(insert_sql,val)
+
+connection.commit()
+connection.close()
+
+
